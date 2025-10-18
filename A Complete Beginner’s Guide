@@ -1,0 +1,113 @@
+https://medium.com/@TheWuraolah/introduction-to-data-engineering-a-complete-beginners-guide-0b955f5eb50c
+
+
+
+### Synopsis: Introduction to Data Engineering: A Complete Beginner’s Guide
+
+**Author:** Wura Olah
+**Purpose:** This article aims to introduce newcomers to the field of data engineering by explaining what the role is, why it matters, and how one can start building the foundational skills.
+
+#### 1. What is Data Engineering?
+
+* Data engineering is about **collecting, organizing, and processing data** so that it becomes accessible and usable for analysis and decision-making.
+* Using the analogy of a bakery: ingredients (data) must be gathered, organized, prepared (processed) and then the recipe (system/architecture) is used to “bake” insights (analytics) from that data.
+* The role of a data engineer is akin to the master organizer – ensuring all the data “ingredients” are available, structured, and ready for consumption.
+
+#### 2. Why Does Data Engineering Matter?
+
+* Businesses generate massive amounts of data from varied sources (web, users, devices) that are **raw**, **diverse**, and **unstructured**.
+* Without proper systems in place (built by data engineers), this data would remain unusable or inefficient to analyze.
+* Good data engineering leads to better decision-making, faster insights, and cost-efficient systems.
+* It also enables automation and scalability — moving from manual or ad-hoc data tasks to systematic workflows.
+
+#### 3. Core Components & Responsibilities of a Data Engineer
+
+The article outlines several key areas:
+
+* **Data Sources & Types**:
+
+  * Structured: relational databases, spreadsheets – well defined schemas.
+  * Semi-structured: e.g., JSON, XML – some structure but flexible schema.
+  * Unstructured: images, audio, free-text – little or no defined schema.
+* **ETL (Extract / Transform / Load)**:
+
+  * Extract data from source(s).
+  * Transform data (cleaning, processing, formatting).
+  * Load data into target storage (warehouse, lake).
+* **Pipeline Design & Architecture**:
+
+  * Data engineers design workflows that automate data movement and processing.
+  * They build the “plumbing” that takes raw data to usable data.
+* **Data Storage / Systems**:
+
+  * Relational databases, NoSQL, data warehouses, data lakes / lakehouses.
+  * Choosing the right system depends on data type, volume, access needs, and usage.
+* **Data Quality & Governance**:
+
+  * Ensuring accuracy, completeness, consistency of data.
+  * Implementing checks, validations, auditing.
+  * Managing access, security, compliance for sensitive data.
+* **Scalability & Performance**:
+
+  * Systems must handle growing data volumes, high velocity, varied variety.
+  * Ensuring pipelines are efficient, maintainable, and robust.
+* **Collaboration & Communication**:
+
+  * Data engineers work with data scientists, analysts, business teams, software engineers.
+  * They must translate data needs into system requirements, processes, and tools.
+  * Ability to explain technical solutions to non-technical stakeholders.
+
+#### 4. Skills & Tools to Learn
+
+According to the article, for beginners aiming toward data engineering, important skills include:
+
+* **Programming**: Python is often the go-to, plus familiarity with data manipulation libraries.
+* **SQL**: For querying relational databases, designing schemas, optimizing queries.
+* **Data Modeling & Database Systems**: Understanding schema design (OLTP vs OLAP), dimensional modeling, warehousing concepts.
+* **Big-data / Distributed Systems**: Frameworks like Hadoop, Spark are helpful when dealing with large-scale data.
+* **Cloud & Storage Systems**: Building pipelines on cloud infrastructure, using data lakes/warehouses.
+* **Orchestration / Workflow Tools**: Scheduling, monitoring, automating pipelines (e.g., Airflow, Prefect) although not always named explicitly.
+* **Data quality, governance, security**: Validating data, ensuring secure access, managing compliance.
+
+#### 5. Getting Started / Learning Path
+
+The article advises a mindset of curiosity, growth, and incremental learning — especially if you come from a non-technical background. Some suggestions:
+
+* Start with foundational languages (Python, SQL).
+* Work on smaller projects to understand the flow from raw data to insights.
+* Read/learn about the architecture of data systems (warehouses, lakes, pipelines).
+* Remain patient: every expert started as a beginner. Avoid getting stuck in jargon; focus on building understanding steadily.
+* Use analogies and concrete examples to internalize complex concepts.
+
+#### 6. Future Trends & Considerations
+
+Though the article is introductory, it touches on emerging themes:
+
+* The growth of **real-time data processing**, streaming data and the need for faster insights.
+* Increased use of **cloud data architectures** and "lakehouse" patterns unifying data lakes + warehouses.
+* The importance of making data **accessible to non-technical users** (data democratization).
+* Growing demand for data engineers who can scale systems and support AI/ML workflows.
+
+#### 7. Why This Matters for You
+
+Given your learning path (Python, SQL, ETL, pipelines, pursuing MS in Data Science & AI), this article provides a **solid map** of where you are and where you’re aiming:
+
+* It helps you see the **role of data engineering** within the broader technology/data ecosystem.
+* It highlights **which tools and skills** to focus on (Python, SQL, pipelines, storage, big data).
+* It clarifies that your early learning (web dev, full-stack, etc.) gives you a strong foundation for data engineering: you already know programming, system logic, and building apps. You’re now layering on data-engineering specific skills.
+
+---
+
+### How to Use This Synopsis in Your GitHub Repo
+
+* Create a markdown file: `01-intro-to-data-engineering.md`
+* Add this synopsis under a heading like **“Article Summary”** or **“Key Takeaways”**.
+* Add a link (URL) to the article at the top for reference.
+* Optionally, add a small **“Action Steps”** section at the bottom (for yourself) such as:
+
+  ```markdown
+  ### Action Steps
+  - Review my current Python + SQL progress and map to the skills listed in the article.  
+  - Choose one mini-project to build a simple ETL pipeline (extract → transform → load).  
+  - Research one tool from the article (e.g., Spark or a data warehouse) to explore next month.  
+  ```
