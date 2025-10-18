@@ -1,0 +1,64 @@
+# Where Do Hadoop, Spark, and Redshift Fit in ETL and Data Pipelines?
+
+When I first started learning about **ETL (Extract, Transform, Load)** and **data pipelines**, I kept wondering:
+*Where exactly do tools like Hadoop, Spark, and Redshift come in?*
+
+Here’s a clear breakdown.
+
+---
+
+## ETL in short
+
+**Extract → Transform → Load**
+
+* **Extract**: get data from APIs, logs, or databases
+* **Transform**: clean, combine, and process data
+* **Load**: store it in a data warehouse for analytics or machine learning
+
+---
+
+## Hadoop – the Storage & Processing Foundation
+
+* Handles **distributed storage** (HDFS) and batch processing.
+* It’s the foundational layer of big data infrastructure.
+* Modern tools like Spark often run **on top of Hadoop** for faster performance.
+
+---
+
+## Apache Spark – the Transformation Powerhouse
+
+* Spark handles the **Transform** step in ETL.
+* With **PySpark**, you can clean, join, and aggregate data at scale.
+* Supports both **batch and real-time** processing.
+
+Think of Spark as the processing engine that transforms data before it’s stored or used.
+
+---
+
+## Amazon Redshift – the Cloud Data Warehouse
+
+* Represents the **Load** step in ETL.
+* Stores **clean, structured data** for dashboards, analytics, and machine learning.
+* Supports fast SQL queries and integration with tools like Tableau and Power BI.
+
+---
+
+## Putting it all together
+
+```
+[Extract] → APIs / Databases / Logs
+[Transform] → Spark (PySpark) on Hadoop / Databricks
+[Load] → Redshift / Snowflake / BigQuery
+[Visualize] → Tableau / Power BI / Dashboards
+```
+
+---
+
+## Summary Table
+
+| Tool     | Role in Pipeline                   | Step                   |
+| -------- | ---------------------------------- | ---------------------- |
+| Hadoop   | Distributed storage layer          | Extract / Intermediate |
+| Spark    | Processing & transformation engine | Transform              |
+| Redshift | Cloud data warehouse               | Load                   |
+
